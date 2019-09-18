@@ -1,5 +1,5 @@
 #include <stdio.h>
-void findGDC(int a,int b);
+void findGCD(int a,int b);
 
 int main(){
     int a,b;
@@ -21,7 +21,7 @@ int main(){
 }
 
 
-void findGDC(int a,int b)
+void findGCD(int a,int b)
 {
     int dummy;
     while(b>0){
