@@ -1,4 +1,5 @@
 #include <stdio.h>
+void findGDC(int a,int b);
 
 int main(){
     int a,b;
@@ -16,5 +17,17 @@ int main(){
         printf("Your value cannot be smaller than 1");
         return 0;
     }
-    
+    findGDC(a,b);
+}
+
+
+void findGDC(int a,int b)
+{
+    int dummy;
+    while(b>0){
+        dummy=b;
+        b=a%b;
+        a=dummy;
+    }
+    printf("Greatest Common Divisor of your values is: %d",a);
 }
